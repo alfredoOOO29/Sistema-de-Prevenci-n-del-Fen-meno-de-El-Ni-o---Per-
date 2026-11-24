@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6419c70da64caa98eb151adee82ca91 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c6419c70da64caa98eb151adee82ca91" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c6419c70da64caa98eb151adee82ca91 = L.map(
+                "map_c6419c70da64caa98eb151adee82ca91",
+                {
+                    center: [-9.19, -75.0152],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb06a19e871cb7b29d781a7a4b04053d = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eb06a19e871cb7b29d781a7a4b04053d.addTo(map_c6419c70da64caa98eb151adee82ca91);
+        
+    
+            var heat_map_18fc0bb642a04e27a780f68287b0102b = L.heatLayer(
+                [[-11.258277860747475, -68.6407140166711, 26.476885381006923], [-15.191664472036143, -78.97207123562937, 35.79212815507391], [-17.629479102675557, -68.39117192189407, 15.305256140650478], [-14.727150590272188, -78.61574137190536, 22.419622715660342], [-10.224989664441917, -77.21402117742545, 9.871688796655762], [-12.741396326366074, -76.237296037182, 34.65648768921554], [-14.405871921149526, -74.31495230062305, 14.556172754748173], [-7.06419266577411, -78.7831863920652, 13.99361310081195], [-5.683805522781176, -75.27801758138519, 19.865027752620662], [-17.38100661992607, -69.17883477297583, 28.22544912103189], [-12.389200630390603, -74.23911572468846, 6.7181395110156945], [-3.152076861177207, -70.92327329630551, 186.92332899977052], [-7.557537489740403, -78.45222278855111, 144.21758588058796], [-11.003808785589325, -77.47246258693936, 15.393612290402125], [-12.943178825627147, -73.94495091894277, 23.24083969394795], [-16.658088413764126, -68.17046982419328, 13.230779996940413], [-17.900601891775157, -70.39900143008715, 30.309995224959508], [-4.117133759652976, -80.03741952745682, 11.607824767773614], [-3.6844828706220323, -72.89712435124174, 126.04128810773551], [-12.40231820911808, -76.77261681365229, 28.12525822394198], [-2.0301706336261223, -74.86120597289465, 23.61636025047634], [-4.305869124895846, -73.70339643159654, 19.641739608900483], [-5.38633585309003, -75.44196676133886, 154.35235341190855], [-12.34159234062612, -74.38858101485886, 17.80328112162488]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 1,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_18fc0bb642a04e27a780f68287b0102b.addTo(map_c6419c70da64caa98eb151adee82ca91);
+        
+    
+            var circle_marker_34fee91fa1af4838b48cbca9b1a88686 = L.circleMarker(
+                [-3.152076861177207, -70.92327329630551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+        
+    
+        var popup_da2d87108c49c540793a7b4c96592d2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f946160378654ef2cc3cd0ed9ecb4ae6 = $(`<div id="html_f946160378654ef2cc3cd0ed9ecb4ae6" style="width: 100.0%; height: 100.0%;">La Libertad: Riesgo de Inundacion Extremo (186.9 mm)</div>`)[0];
+                popup_da2d87108c49c540793a7b4c96592d2b.setContent(html_f946160378654ef2cc3cd0ed9ecb4ae6);
+            
+        
+
+        circle_marker_34fee91fa1af4838b48cbca9b1a88686.bindPopup(popup_da2d87108c49c540793a7b4c96592d2b)
+        ;
+
+        
+    
+    
+            var circle_marker_7e2021c9bbfec740a64452e346605b90 = L.circleMarker(
+                [-7.557537489740403, -78.45222278855111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+        
+    
+        var popup_ca9c746ec79cd0d4d7e13b41af3f5404 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e470336933644374ad8b16af4035c8cc = $(`<div id="html_e470336933644374ad8b16af4035c8cc" style="width: 100.0%; height: 100.0%;">Lambayeque: Riesgo de Inundacion Extremo (144.2 mm)</div>`)[0];
+                popup_ca9c746ec79cd0d4d7e13b41af3f5404.setContent(html_e470336933644374ad8b16af4035c8cc);
+            
+        
+
+        circle_marker_7e2021c9bbfec740a64452e346605b90.bindPopup(popup_ca9c746ec79cd0d4d7e13b41af3f5404)
+        ;
+
+        
+    
+    
+            var circle_marker_3d2b69b4bf8d893c75aae0ab7366b8bc = L.circleMarker(
+                [-3.6844828706220323, -72.89712435124174],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+        
+    
+        var popup_f7dde3b7fc110021a681e91fa7f96d55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e103cc6f2193e1d987267ce55414023e = $(`<div id="html_e103cc6f2193e1d987267ce55414023e" style="width: 100.0%; height: 100.0%;">Piura: Riesgo de Inundacion Extremo (126.0 mm)</div>`)[0];
+                popup_f7dde3b7fc110021a681e91fa7f96d55.setContent(html_e103cc6f2193e1d987267ce55414023e);
+            
+        
+
+        circle_marker_3d2b69b4bf8d893c75aae0ab7366b8bc.bindPopup(popup_f7dde3b7fc110021a681e91fa7f96d55)
+        ;
+
+        
+    
+    
+            var circle_marker_c373814666c50c31e121a76940c745a2 = L.circleMarker(
+                [-5.38633585309003, -75.44196676133886],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+        
+    
+        var popup_fe3eea911ea11778a27f8c7da6b4f28c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b887033a4ec2205725b5cd9bf6aec843 = $(`<div id="html_b887033a4ec2205725b5cd9bf6aec843" style="width: 100.0%; height: 100.0%;">Tumbes: Riesgo de Inundacion Extremo (154.4 mm)</div>`)[0];
+                popup_fe3eea911ea11778a27f8c7da6b4f28c.setContent(html_b887033a4ec2205725b5cd9bf6aec843);
+            
+        
+
+        circle_marker_c373814666c50c31e121a76940c745a2.bindPopup(popup_fe3eea911ea11778a27f8c7da6b4f28c)
+        ;
+
+        
+    
+</script>
+</html>
