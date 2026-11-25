@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c6419c70da64caa98eb151adee82ca91 {
+                #map_50656692bb91aca9e9a1c1ff76efb730 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -55,14 +55,39 @@
 <body>
     
     
-            <div class="folium-map" id="map_c6419c70da64caa98eb151adee82ca91" ></div>
+            <div class="folium-map" id="map_50656692bb91aca9e9a1c1ff76efb730" ></div>
+        
+    
+        <div style="
+            position: fixed; 
+            bottom: 30px; left: 30px; width: 280px; height: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            border: 2px solid #CBD5E1;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            z-index: 9999;
+            font-size: 12px;
+            padding: 12px;
+            font-family: Arial, sans-serif;
+        ">
+            <h4 style="margin: 0 0 8px 0; color: #0F172A; font-size: 13px;">
+                🌊 Fenómeno de El Niño - Perú
+            </h4>
+            <div style="margin-bottom: 8px;"><b>Fuente:</b> <span style="background-color: #10B981; color: white; padding: 2px 6px; border-radius: 4px; font-size: 11px;">DATOS EN VIVO</span></div>
+            <div style="margin-bottom: 4px;"><span style="color: #D32F2F; font-size: 16px;">●</span> <b>Extremo:</b> > 120 mm y > 30°C</div>
+            <div style="margin-bottom: 4px;"><span style="color: #F57C00; font-size: 16px;">●</span> <b>Alto:</b> > 80 mm (o >120mm sin calor)</div>
+            <div style="margin-bottom: 4px;"><span style="color: #FBC02D; font-size: 16px;">●</span> <b>Moderado:</b> 40 a 80 mm</div>
+            <div style="margin-bottom: 4px;"><span style="color: #388E3C; font-size: 16px;">●</span> <b>Normal:</b> &le; 40 mm</div>
+            <hr style="margin: 8px 0; border: none; border-top: 1px solid #E2E8F0;">
+            <small style="color: #64748B;">Mapa interactivo generado con Folium / Esri</small>
+        </div>
         
 </body>
 <script>
     
     
-            var map_c6419c70da64caa98eb151adee82ca91 = L.map(
-                "map_c6419c70da64caa98eb151adee82ca91",
+            var map_50656692bb91aca9e9a1c1ff76efb730 = L.map(
+                "map_50656692bb91aca9e9a1c1ff76efb730",
                 {
                     center: [-9.19, -75.0152],
                     crs: L.CRS.EPSG3857,
@@ -79,14 +104,14 @@
 
         
     
-            var tile_layer_eb06a19e871cb7b29d781a7a4b04053d = L.tileLayer(
+            var tile_layer_f9d1b5f7c5ac78b47d9ca11f13a1abbb = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
   "maxZoom": 18,
   "maxNativeZoom": 18,
   "noWrap": false,
-  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community",
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -96,113 +121,866 @@
             );
         
     
-            tile_layer_eb06a19e871cb7b29d781a7a4b04053d.addTo(map_c6419c70da64caa98eb151adee82ca91);
+            tile_layer_f9d1b5f7c5ac78b47d9ca11f13a1abbb.addTo(map_50656692bb91aca9e9a1c1ff76efb730);
         
     
-            var heat_map_18fc0bb642a04e27a780f68287b0102b = L.heatLayer(
-                [[-11.258277860747475, -68.6407140166711, 26.476885381006923], [-15.191664472036143, -78.97207123562937, 35.79212815507391], [-17.629479102675557, -68.39117192189407, 15.305256140650478], [-14.727150590272188, -78.61574137190536, 22.419622715660342], [-10.224989664441917, -77.21402117742545, 9.871688796655762], [-12.741396326366074, -76.237296037182, 34.65648768921554], [-14.405871921149526, -74.31495230062305, 14.556172754748173], [-7.06419266577411, -78.7831863920652, 13.99361310081195], [-5.683805522781176, -75.27801758138519, 19.865027752620662], [-17.38100661992607, -69.17883477297583, 28.22544912103189], [-12.389200630390603, -74.23911572468846, 6.7181395110156945], [-3.152076861177207, -70.92327329630551, 186.92332899977052], [-7.557537489740403, -78.45222278855111, 144.21758588058796], [-11.003808785589325, -77.47246258693936, 15.393612290402125], [-12.943178825627147, -73.94495091894277, 23.24083969394795], [-16.658088413764126, -68.17046982419328, 13.230779996940413], [-17.900601891775157, -70.39900143008715, 30.309995224959508], [-4.117133759652976, -80.03741952745682, 11.607824767773614], [-3.6844828706220323, -72.89712435124174, 126.04128810773551], [-12.40231820911808, -76.77261681365229, 28.12525822394198], [-2.0301706336261223, -74.86120597289465, 23.61636025047634], [-4.305869124895846, -73.70339643159654, 19.641739608900483], [-5.38633585309003, -75.44196676133886, 154.35235341190855], [-12.34159234062612, -74.38858101485886, 17.80328112162488]],
+            var heat_map_d9e123132644937843540322bd05b1c9 = L.heatLayer(
+                [[-6.2294, -77.8728, 0.0], [-9.5278, -77.5278, 0.0], [-13.6339, -72.8814, 0.0], [-16.3988, -71.5369, 0.0], [-13.1603, -74.2258, 0.0], [-7.1617, -78.5128, 0.0], [-12.0566, -77.1181, 0.0], [-13.532, -71.9675, 0.0], [-12.7872, -74.9756, 0.0], [-9.9306, -76.2422, 0.1], [-14.0678, -75.7286, 0.0], [-12.0653, -75.2049, 0.0], [-8.1116, -79.0286, 0.0], [-6.7714, -79.8409, 0.0], [-12.0464, -77.0428, 0.0], [-3.7491, -73.2538, 0.0], [-12.5933, -69.1891, 0.0], [-17.1983, -70.9356, 0.0], [-10.6675, -76.2567, 0.0], [-5.1945, -80.6328, 0.0], [-15.8422, -70.0199, 0.0], [-6.0342, -76.9717, 0.0], [-18.0145, -70.2536, 0.0], [-3.5669, -80.4515, 0.0], [-8.3791, -74.5539, 0.0]],
                 {
   "minOpacity": 0.5,
-  "maxZoom": 1,
-  "radius": 25,
-  "blur": 15,
+  "maxZoom": 6,
+  "radius": 28,
+  "blur": 16,
 }
             );
         
     
-            heat_map_18fc0bb642a04e27a780f68287b0102b.addTo(map_c6419c70da64caa98eb151adee82ca91);
+            heat_map_d9e123132644937843540322bd05b1c9.addTo(map_50656692bb91aca9e9a1c1ff76efb730);
         
     
-            var circle_marker_34fee91fa1af4838b48cbca9b1a88686 = L.circleMarker(
-                [-3.152076861177207, -70.92327329630551],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+            var circle_marker_14c4abf86814492f48907b306d4f8d37 = L.circleMarker(
+                [-6.2294, -77.8728],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
         
     
-        var popup_da2d87108c49c540793a7b4c96592d2b = L.popup({
-  "maxWidth": "100%",
+        var popup_cf59d9e61c8e1c6a58a5d5fad939144e = L.popup({
+  "maxWidth": 300,
 });
 
         
             
-                var html_f946160378654ef2cc3cd0ed9ecb4ae6 = $(`<div id="html_f946160378654ef2cc3cd0ed9ecb4ae6" style="width: 100.0%; height: 100.0%;">La Libertad: Riesgo de Inundacion Extremo (186.9 mm)</div>`)[0];
-                popup_da2d87108c49c540793a7b4c96592d2b.setContent(html_f946160378654ef2cc3cd0ed9ecb4ae6);
+                var html_4f9bf232535fb4a7335c54c874341393 = $(`<div id="html_4f9bf232535fb4a7335c54c874341393" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Amazonas                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 16.10 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_cf59d9e61c8e1c6a58a5d5fad939144e.setContent(html_4f9bf232535fb4a7335c54c874341393);
             
         
 
-        circle_marker_34fee91fa1af4838b48cbca9b1a88686.bindPopup(popup_da2d87108c49c540793a7b4c96592d2b)
+        circle_marker_14c4abf86814492f48907b306d4f8d37.bindPopup(popup_cf59d9e61c8e1c6a58a5d5fad939144e)
         ;
 
         
     
     
-            var circle_marker_7e2021c9bbfec740a64452e346605b90 = L.circleMarker(
-                [-7.557537489740403, -78.45222278855111],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+            circle_marker_14c4abf86814492f48907b306d4f8d37.bindTooltip(
+                `<div>
+                     Amazonas: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
         
     
-        var popup_ca9c746ec79cd0d4d7e13b41af3f5404 = L.popup({
-  "maxWidth": "100%",
+            var circle_marker_d529662736810d15926810b5454210d9 = L.circleMarker(
+                [-9.5278, -77.5278],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_4eff6dfd57f6d24c31e311b530b46d94 = L.popup({
+  "maxWidth": 300,
 });
 
         
             
-                var html_e470336933644374ad8b16af4035c8cc = $(`<div id="html_e470336933644374ad8b16af4035c8cc" style="width: 100.0%; height: 100.0%;">Lambayeque: Riesgo de Inundacion Extremo (144.2 mm)</div>`)[0];
-                popup_ca9c746ec79cd0d4d7e13b41af3f5404.setContent(html_e470336933644374ad8b16af4035c8cc);
+                var html_88245034447fe02efa3714a1145f8b73 = $(`<div id="html_88245034447fe02efa3714a1145f8b73" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Áncash                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 13.20 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_4eff6dfd57f6d24c31e311b530b46d94.setContent(html_88245034447fe02efa3714a1145f8b73);
             
         
 
-        circle_marker_7e2021c9bbfec740a64452e346605b90.bindPopup(popup_ca9c746ec79cd0d4d7e13b41af3f5404)
+        circle_marker_d529662736810d15926810b5454210d9.bindPopup(popup_4eff6dfd57f6d24c31e311b530b46d94)
         ;
 
         
     
     
-            var circle_marker_3d2b69b4bf8d893c75aae0ab7366b8bc = L.circleMarker(
-                [-3.6844828706220323, -72.89712435124174],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+            circle_marker_d529662736810d15926810b5454210d9.bindTooltip(
+                `<div>
+                     Áncash: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
         
     
-        var popup_f7dde3b7fc110021a681e91fa7f96d55 = L.popup({
-  "maxWidth": "100%",
+            var circle_marker_42e54941a7d115ea28b8f2318713fbbc = L.circleMarker(
+                [-13.6339, -72.8814],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_5da53c5b052b19cdc8664d888221c4b7 = L.popup({
+  "maxWidth": 300,
 });
 
         
             
-                var html_e103cc6f2193e1d987267ce55414023e = $(`<div id="html_e103cc6f2193e1d987267ce55414023e" style="width: 100.0%; height: 100.0%;">Piura: Riesgo de Inundacion Extremo (126.0 mm)</div>`)[0];
-                popup_f7dde3b7fc110021a681e91fa7f96d55.setContent(html_e103cc6f2193e1d987267ce55414023e);
+                var html_a82682dfeadd124ecc36b1074e3a883c = $(`<div id="html_a82682dfeadd124ecc36b1074e3a883c" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Apurímac                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 15.60 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_5da53c5b052b19cdc8664d888221c4b7.setContent(html_a82682dfeadd124ecc36b1074e3a883c);
             
         
 
-        circle_marker_3d2b69b4bf8d893c75aae0ab7366b8bc.bindPopup(popup_f7dde3b7fc110021a681e91fa7f96d55)
+        circle_marker_42e54941a7d115ea28b8f2318713fbbc.bindPopup(popup_5da53c5b052b19cdc8664d888221c4b7)
         ;
 
         
     
     
-            var circle_marker_c373814666c50c31e121a76940c745a2 = L.circleMarker(
-                [-5.38633585309003, -75.44196676133886],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
-            ).addTo(map_c6419c70da64caa98eb151adee82ca91);
+            circle_marker_42e54941a7d115ea28b8f2318713fbbc.bindTooltip(
+                `<div>
+                     Apurímac: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
         
     
-        var popup_fe3eea911ea11778a27f8c7da6b4f28c = L.popup({
-  "maxWidth": "100%",
+            var circle_marker_8e3a8139aa0432ce72abd7bad3dc46e4 = L.circleMarker(
+                [-16.3988, -71.5369],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_73cecfd1ede54ee7cda06dc49a76603e = L.popup({
+  "maxWidth": 300,
 });
 
         
             
-                var html_b887033a4ec2205725b5cd9bf6aec843 = $(`<div id="html_b887033a4ec2205725b5cd9bf6aec843" style="width: 100.0%; height: 100.0%;">Tumbes: Riesgo de Inundacion Extremo (154.4 mm)</div>`)[0];
-                popup_fe3eea911ea11778a27f8c7da6b4f28c.setContent(html_b887033a4ec2205725b5cd9bf6aec843);
+                var html_b1d9ef40615f63a9345435ce5be4a6ef = $(`<div id="html_b1d9ef40615f63a9345435ce5be4a6ef" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Arequipa                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 16.30 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_73cecfd1ede54ee7cda06dc49a76603e.setContent(html_b1d9ef40615f63a9345435ce5be4a6ef);
             
         
 
-        circle_marker_c373814666c50c31e121a76940c745a2.bindPopup(popup_fe3eea911ea11778a27f8c7da6b4f28c)
+        circle_marker_8e3a8139aa0432ce72abd7bad3dc46e4.bindPopup(popup_73cecfd1ede54ee7cda06dc49a76603e)
         ;
 
         
     
+    
+            circle_marker_8e3a8139aa0432ce72abd7bad3dc46e4.bindTooltip(
+                `<div>
+                     Arequipa: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce859ed87a09faec87e32ceb56606fd7 = L.circleMarker(
+                [-13.1603, -74.2258],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_2fe8dfc534676823fc236ef45541a9a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14ccd0a72b115bba5bf2903606c9869e = $(`<div id="html_14ccd0a72b115bba5bf2903606c9869e" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Ayacucho                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 17.30 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_2fe8dfc534676823fc236ef45541a9a3.setContent(html_14ccd0a72b115bba5bf2903606c9869e);
+            
+        
+
+        circle_marker_ce859ed87a09faec87e32ceb56606fd7.bindPopup(popup_2fe8dfc534676823fc236ef45541a9a3)
+        ;
+
+        
+    
+    
+            circle_marker_ce859ed87a09faec87e32ceb56606fd7.bindTooltip(
+                `<div>
+                     Ayacucho: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1b134b87c81145419388c5a4d992a5b = L.circleMarker(
+                [-7.1617, -78.5128],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_dc27031f3a0dc4cc7a9f95a1f0df2df8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_790f4865e8a458619c33f5a5032f9a65 = $(`<div id="html_790f4865e8a458619c33f5a5032f9a65" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Cajamarca                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 11.00 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_dc27031f3a0dc4cc7a9f95a1f0df2df8.setContent(html_790f4865e8a458619c33f5a5032f9a65);
+            
+        
+
+        circle_marker_b1b134b87c81145419388c5a4d992a5b.bindPopup(popup_dc27031f3a0dc4cc7a9f95a1f0df2df8)
+        ;
+
+        
+    
+    
+            circle_marker_b1b134b87c81145419388c5a4d992a5b.bindTooltip(
+                `<div>
+                     Cajamarca: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f20a735b32b107664204f70775aba4ca = L.circleMarker(
+                [-12.0566, -77.1181],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_e407440a4d1906f18d9231ad14b7f478 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_053dea4eb6411f77bd3cff230320f0f6 = $(`<div id="html_053dea4eb6411f77bd3cff230320f0f6" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Callao                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 24.90 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_e407440a4d1906f18d9231ad14b7f478.setContent(html_053dea4eb6411f77bd3cff230320f0f6);
+            
+        
+
+        circle_marker_f20a735b32b107664204f70775aba4ca.bindPopup(popup_e407440a4d1906f18d9231ad14b7f478)
+        ;
+
+        
+    
+    
+            circle_marker_f20a735b32b107664204f70775aba4ca.bindTooltip(
+                `<div>
+                     Callao: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cdddf606ac7b83330a42d03321c9257a = L.circleMarker(
+                [-13.532, -71.9675],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_f4594b8e282adfa5050672420f394df3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1353133f0908ab818f742eaf0c1656ed = $(`<div id="html_1353133f0908ab818f742eaf0c1656ed" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Cusco                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 12.00 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_f4594b8e282adfa5050672420f394df3.setContent(html_1353133f0908ab818f742eaf0c1656ed);
+            
+        
+
+        circle_marker_cdddf606ac7b83330a42d03321c9257a.bindPopup(popup_f4594b8e282adfa5050672420f394df3)
+        ;
+
+        
+    
+    
+            circle_marker_cdddf606ac7b83330a42d03321c9257a.bindTooltip(
+                `<div>
+                     Cusco: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8628e300a5481ab45d7f499221f11e73 = L.circleMarker(
+                [-12.7872, -74.9756],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_5a1afa295b7f60a5bc2cbca2d2442007 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49d97502f8fd4709ba217c1dace9fabe = $(`<div id="html_49d97502f8fd4709ba217c1dace9fabe" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Huancavelica                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 9.90 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_5a1afa295b7f60a5bc2cbca2d2442007.setContent(html_49d97502f8fd4709ba217c1dace9fabe);
+            
+        
+
+        circle_marker_8628e300a5481ab45d7f499221f11e73.bindPopup(popup_5a1afa295b7f60a5bc2cbca2d2442007)
+        ;
+
+        
+    
+    
+            circle_marker_8628e300a5481ab45d7f499221f11e73.bindTooltip(
+                `<div>
+                     Huancavelica: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eddcea39bdd433a703996e19e2589afa = L.circleMarker(
+                [-9.9306, -76.2422],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_feaf44bf9dd9688104b09d09ade1fb30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8a916567c847bf7f46e8d25a6947a41 = $(`<div id="html_c8a916567c847bf7f46e8d25a6947a41" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Huánuco                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.10 mm<br>                 <b>Temperatura:</b> 19.30 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_feaf44bf9dd9688104b09d09ade1fb30.setContent(html_c8a916567c847bf7f46e8d25a6947a41);
+            
+        
+
+        circle_marker_eddcea39bdd433a703996e19e2589afa.bindPopup(popup_feaf44bf9dd9688104b09d09ade1fb30)
+        ;
+
+        
+    
+    
+            circle_marker_eddcea39bdd433a703996e19e2589afa.bindTooltip(
+                `<div>
+                     Huánuco: Riesgo Normal (0.1 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5dccdc0e16ed59506184cebf29c5e3f3 = L.circleMarker(
+                [-14.0678, -75.7286],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_e705c1b55ab427a0aa2ec8bdf8fbf0f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82af8eb3cfbb2e1796a89eff0ae7d48d = $(`<div id="html_82af8eb3cfbb2e1796a89eff0ae7d48d" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Ica                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 22.80 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_e705c1b55ab427a0aa2ec8bdf8fbf0f3.setContent(html_82af8eb3cfbb2e1796a89eff0ae7d48d);
+            
+        
+
+        circle_marker_5dccdc0e16ed59506184cebf29c5e3f3.bindPopup(popup_e705c1b55ab427a0aa2ec8bdf8fbf0f3)
+        ;
+
+        
+    
+    
+            circle_marker_5dccdc0e16ed59506184cebf29c5e3f3.bindTooltip(
+                `<div>
+                     Ica: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb2cbc4514400675ad9718e0b7facfb6 = L.circleMarker(
+                [-12.0653, -75.2049],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_4a7d9ac3f73ad65a21553d6116b1c9f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3890fae06d568619535ec019c3daaf01 = $(`<div id="html_3890fae06d568619535ec019c3daaf01" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Junín                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 12.30 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_4a7d9ac3f73ad65a21553d6116b1c9f7.setContent(html_3890fae06d568619535ec019c3daaf01);
+            
+        
+
+        circle_marker_fb2cbc4514400675ad9718e0b7facfb6.bindPopup(popup_4a7d9ac3f73ad65a21553d6116b1c9f7)
+        ;
+
+        
+    
+    
+            circle_marker_fb2cbc4514400675ad9718e0b7facfb6.bindTooltip(
+                `<div>
+                     Junín: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c44d52cab60291f5cd4ae4f31e7b3a15 = L.circleMarker(
+                [-8.1116, -79.0286],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_9e0c856623b6330c0420baadce947bcb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea9db9441309a886d6515c4ae1073bfa = $(`<div id="html_ea9db9441309a886d6515c4ae1073bfa" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     La Libertad                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 26.30 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_9e0c856623b6330c0420baadce947bcb.setContent(html_ea9db9441309a886d6515c4ae1073bfa);
+            
+        
+
+        circle_marker_c44d52cab60291f5cd4ae4f31e7b3a15.bindPopup(popup_9e0c856623b6330c0420baadce947bcb)
+        ;
+
+        
+    
+    
+            circle_marker_c44d52cab60291f5cd4ae4f31e7b3a15.bindTooltip(
+                `<div>
+                     La Libertad: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_086e8b811b875ed0142d459d11e346f7 = L.circleMarker(
+                [-6.7714, -79.8409],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_a22c4e1564067f55462d02741379ec7e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07cced9454ad8566dc3002122e8de7b1 = $(`<div id="html_07cced9454ad8566dc3002122e8de7b1" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Lambayeque                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 26.70 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_a22c4e1564067f55462d02741379ec7e.setContent(html_07cced9454ad8566dc3002122e8de7b1);
+            
+        
+
+        circle_marker_086e8b811b875ed0142d459d11e346f7.bindPopup(popup_a22c4e1564067f55462d02741379ec7e)
+        ;
+
+        
+    
+    
+            circle_marker_086e8b811b875ed0142d459d11e346f7.bindTooltip(
+                `<div>
+                     Lambayeque: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49908ba179aafa25b4a1d263075cb3f7 = L.circleMarker(
+                [-12.0464, -77.0428],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_835e1f4aa420115ed36178adaf16f038 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69ac0955b8bce8f5e164a2e1dd367190 = $(`<div id="html_69ac0955b8bce8f5e164a2e1dd367190" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Lima                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 24.50 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_835e1f4aa420115ed36178adaf16f038.setContent(html_69ac0955b8bce8f5e164a2e1dd367190);
+            
+        
+
+        circle_marker_49908ba179aafa25b4a1d263075cb3f7.bindPopup(popup_835e1f4aa420115ed36178adaf16f038)
+        ;
+
+        
+    
+    
+            circle_marker_49908ba179aafa25b4a1d263075cb3f7.bindTooltip(
+                `<div>
+                     Lima: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea580405d0dbea07000b56b957b06c09 = L.circleMarker(
+                [-3.7491, -73.2538],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_ea7a1b79f42d14f299db776163a28618 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5249be3c5badfd7931b968ec45f60596 = $(`<div id="html_5249be3c5badfd7931b968ec45f60596" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Loreto                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 25.70 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_ea7a1b79f42d14f299db776163a28618.setContent(html_5249be3c5badfd7931b968ec45f60596);
+            
+        
+
+        circle_marker_ea580405d0dbea07000b56b957b06c09.bindPopup(popup_ea7a1b79f42d14f299db776163a28618)
+        ;
+
+        
+    
+    
+            circle_marker_ea580405d0dbea07000b56b957b06c09.bindTooltip(
+                `<div>
+                     Loreto: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2c22e89483d8b0f4af27509ca1e1da2 = L.circleMarker(
+                [-12.5933, -69.1891],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_6d74fb6923667f4e1acea32b3426ac00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ed181547a6b53990e2b87f12e6ec88a = $(`<div id="html_6ed181547a6b53990e2b87f12e6ec88a" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Madre de Dios                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 25.60 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_6d74fb6923667f4e1acea32b3426ac00.setContent(html_6ed181547a6b53990e2b87f12e6ec88a);
+            
+        
+
+        circle_marker_f2c22e89483d8b0f4af27509ca1e1da2.bindPopup(popup_6d74fb6923667f4e1acea32b3426ac00)
+        ;
+
+        
+    
+    
+            circle_marker_f2c22e89483d8b0f4af27509ca1e1da2.bindTooltip(
+                `<div>
+                     Madre de Dios: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e2d6be1763bd7638c2cee51d1af9586 = L.circleMarker(
+                [-17.1983, -70.9356],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_d0cf80a1a433001f15b9cc3ecce7cac6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e833854a62afc45a20d555c079454e2 = $(`<div id="html_2e833854a62afc45a20d555c079454e2" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Moquegua                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 16.90 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_d0cf80a1a433001f15b9cc3ecce7cac6.setContent(html_2e833854a62afc45a20d555c079454e2);
+            
+        
+
+        circle_marker_8e2d6be1763bd7638c2cee51d1af9586.bindPopup(popup_d0cf80a1a433001f15b9cc3ecce7cac6)
+        ;
+
+        
+    
+    
+            circle_marker_8e2d6be1763bd7638c2cee51d1af9586.bindTooltip(
+                `<div>
+                     Moquegua: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1c8e6545047a799e9b030ad7307355c = L.circleMarker(
+                [-10.6675, -76.2567],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_b3eb098f550acfdd8d6c2b3134408edd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17cfcb4edb5f6e27a1d1b07460fd29f8 = $(`<div id="html_17cfcb4edb5f6e27a1d1b07460fd29f8" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Pasco                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 4.20 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_b3eb098f550acfdd8d6c2b3134408edd.setContent(html_17cfcb4edb5f6e27a1d1b07460fd29f8);
+            
+        
+
+        circle_marker_f1c8e6545047a799e9b030ad7307355c.bindPopup(popup_b3eb098f550acfdd8d6c2b3134408edd)
+        ;
+
+        
+    
+    
+            circle_marker_f1c8e6545047a799e9b030ad7307355c.bindTooltip(
+                `<div>
+                     Pasco: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_289d67c083f9adf8067398d0c3fa6de7 = L.circleMarker(
+                [-5.1945, -80.6328],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_833e851fdbe20e3be062c20a8f781175 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f75787a430abca7da7dba688791676dd = $(`<div id="html_f75787a430abca7da7dba688791676dd" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Piura                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 26.40 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_833e851fdbe20e3be062c20a8f781175.setContent(html_f75787a430abca7da7dba688791676dd);
+            
+        
+
+        circle_marker_289d67c083f9adf8067398d0c3fa6de7.bindPopup(popup_833e851fdbe20e3be062c20a8f781175)
+        ;
+
+        
+    
+    
+            circle_marker_289d67c083f9adf8067398d0c3fa6de7.bindTooltip(
+                `<div>
+                     Piura: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7ac5a6948d854622e8778571142d4eb = L.circleMarker(
+                [-15.8422, -70.0199],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_6a46f3b7a6c958246ca537afb2652568 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6571da607c183f8d841529489b13a656 = $(`<div id="html_6571da607c183f8d841529489b13a656" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Puno                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 8.40 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_6a46f3b7a6c958246ca537afb2652568.setContent(html_6571da607c183f8d841529489b13a656);
+            
+        
+
+        circle_marker_c7ac5a6948d854622e8778571142d4eb.bindPopup(popup_6a46f3b7a6c958246ca537afb2652568)
+        ;
+
+        
+    
+    
+            circle_marker_c7ac5a6948d854622e8778571142d4eb.bindTooltip(
+                `<div>
+                     Puno: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f5a35b2205ea0c9db0a06a0cf7b1be5 = L.circleMarker(
+                [-6.0342, -76.9717],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_cfb67fa165cd84fe55969383c06e0c14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f1ad80da8eb6011971bd11cbf774f36 = $(`<div id="html_8f1ad80da8eb6011971bd11cbf774f36" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     San Martín                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 21.80 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_cfb67fa165cd84fe55969383c06e0c14.setContent(html_8f1ad80da8eb6011971bd11cbf774f36);
+            
+        
+
+        circle_marker_1f5a35b2205ea0c9db0a06a0cf7b1be5.bindPopup(popup_cfb67fa165cd84fe55969383c06e0c14)
+        ;
+
+        
+    
+    
+            circle_marker_1f5a35b2205ea0c9db0a06a0cf7b1be5.bindTooltip(
+                `<div>
+                     San Martín: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ae71abe672112b8b37d9c14a2f982fa = L.circleMarker(
+                [-18.0145, -70.2536],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_f9396ac05e3c4b5a82683755afd3addc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2b5b98c2504d9ef863da9052ef45912 = $(`<div id="html_d2b5b98c2504d9ef863da9052ef45912" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Tacna                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 19.50 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_f9396ac05e3c4b5a82683755afd3addc.setContent(html_d2b5b98c2504d9ef863da9052ef45912);
+            
+        
+
+        circle_marker_5ae71abe672112b8b37d9c14a2f982fa.bindPopup(popup_f9396ac05e3c4b5a82683755afd3addc)
+        ;
+
+        
+    
+    
+            circle_marker_5ae71abe672112b8b37d9c14a2f982fa.bindTooltip(
+                `<div>
+                     Tacna: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9f7e0192ea5c66c950974a31056d129 = L.circleMarker(
+                [-3.5669, -80.4515],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_320f85351dd959cb6d598034432840d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aca496ef66048207d0f3e9130f3cf283 = $(`<div id="html_aca496ef66048207d0f3e9130f3cf283" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Tumbes                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 26.60 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_320f85351dd959cb6d598034432840d4.setContent(html_aca496ef66048207d0f3e9130f3cf283);
+            
+        
+
+        circle_marker_f9f7e0192ea5c66c950974a31056d129.bindPopup(popup_320f85351dd959cb6d598034432840d4)
+        ;
+
+        
+    
+    
+            circle_marker_f9f7e0192ea5c66c950974a31056d129.bindTooltip(
+                `<div>
+                     Tumbes: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4eeb65495fed2151495b5ceb4dd8370 = L.circleMarker(
+                [-8.3791, -74.5539],
+                {"bubblingMouseEvents": true, "color": "#388E3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#388E3C", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+        
+    
+        var popup_6fc9b4a5d4fc8dbec18e77d1c05066d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a3d77e3b94626c61d96a0468b2c667f = $(`<div id="html_7a3d77e3b94626c61d96a0468b2c667f" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; min-width: 220px;">                 <h4 style="margin: 0 0 6px 0; color: #1E3A8A; border-bottom: 2px solid #388E3C; padding-bottom: 3px;">                     Ucayali                 </h4>                 <b>Nivel de Riesgo:</b> <span style="color: #388E3C; font-weight: bold;">Riesgo Normal</span><br>                 <b>Precipitación:</b> 0.00 mm<br>                 <b>Temperatura:</b> 27.80 °C<br>                 <b>Motor de Inferencia:</b> Python RuleEngine<br>                 <b>Tipo de Fuente:</b> Medición Real<br>                 <small style="color: #666;">Generado: 2026-11-24 22:59:43</small>             </div>             </div>`)[0];
+                popup_6fc9b4a5d4fc8dbec18e77d1c05066d8.setContent(html_7a3d77e3b94626c61d96a0468b2c667f);
+            
+        
+
+        circle_marker_e4eeb65495fed2151495b5ceb4dd8370.bindPopup(popup_6fc9b4a5d4fc8dbec18e77d1c05066d8)
+        ;
+
+        
+    
+    
+            circle_marker_e4eeb65495fed2151495b5ceb4dd8370.bindTooltip(
+                `<div>
+                     Ucayali: Riesgo Normal (0.0 mm)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_eac2e01a2f7f9784aae817e90c0600ed_layers = {
+                base_layers : {
+                    "https://server.arcgisonline.com/arcgis/rest/services/world_topo_map/mapserver/tile/{z}/{y}/{x}" : tile_layer_f9d1b5f7c5ac78b47d9ca11f13a1abbb,
+                },
+                overlays :  {
+                    "Mapa de Calor de Lluvias" : heat_map_d9e123132644937843540322bd05b1c9,
+                },
+            };
+            let layer_control_eac2e01a2f7f9784aae817e90c0600ed = L.control.layers(
+                layer_control_eac2e01a2f7f9784aae817e90c0600ed_layers.base_layers,
+                layer_control_eac2e01a2f7f9784aae817e90c0600ed_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_50656692bb91aca9e9a1c1ff76efb730);
+
+        
 </script>
 </html>

@@ -1,0 +1,227 @@
+[
+  {
+    "id": "PE-AMA",
+    "name": "Amazonas",
+    "capital": "Chachapoyas",
+    "lat": -6.2294,
+    "lon": -77.8728,
+    "is_coastal_north": false,
+    "zone": "Selva"
+  },
+  {
+    "id": "PE-ANC",
+    "name": "Áncash",
+    "capital": "Huaraz",
+    "lat": -9.5278,
+    "lon": -77.5278,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-APU",
+    "name": "Apurímac",
+    "capital": "Abancay",
+    "lat": -13.6339,
+    "lon": -72.8814,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-ARE",
+    "name": "Arequipa",
+    "capital": "Arequipa",
+    "lat": -16.3988,
+    "lon": -71.5369,
+    "is_coastal_north": false,
+    "zone": "Costa/Sierra"
+  },
+  {
+    "id": "PE-AYA",
+    "name": "Ayacucho",
+    "capital": "Ayacucho",
+    "lat": -13.1603,
+    "lon": -74.2258,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-CAJ",
+    "name": "Cajamarca",
+    "capital": "Cajamarca",
+    "lat": -7.1617,
+    "lon": -78.5128,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-CAL",
+    "name": "Callao",
+    "capital": "Callao",
+    "lat": -12.0566,
+    "lon": -77.1181,
+    "is_coastal_north": false,
+    "zone": "Costa"
+  },
+  {
+    "id": "PE-CUS",
+    "name": "Cusco",
+    "capital": "Cusco",
+    "lat": -13.5320,
+    "lon": -71.9675,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-HUV",
+    "name": "Huancavelica",
+    "capital": "Huancavelica",
+    "lat": -12.7872,
+    "lon": -74.9756,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-HUC",
+    "name": "Huánuco",
+    "capital": "Huánuco",
+    "lat": -9.9306,
+    "lon": -76.2422,
+    "is_coastal_north": false,
+    "zone": "Sierra/Selva"
+  },
+  {
+    "id": "PE-ICA",
+    "name": "Ica",
+    "capital": "Ica",
+    "lat": -14.0678,
+    "lon": -75.7286,
+    "is_coastal_north": false,
+    "zone": "Costa"
+  },
+  {
+    "id": "PE-JUN",
+    "name": "Junín",
+    "capital": "Huancayo",
+    "lat": -12.0653,
+    "lon": -75.2049,
+    "is_coastal_north": false,
+    "zone": "Sierra/Selva"
+  },
+  {
+    "id": "PE-LAL",
+    "name": "La Libertad",
+    "capital": "Trujillo",
+    "lat": -8.1116,
+    "lon": -79.0286,
+    "is_coastal_north": true,
+    "zone": "Costa Norte"
+  },
+  {
+    "id": "PE-LAM",
+    "name": "Lambayeque",
+    "capital": "Chiclayo",
+    "lat": -6.7714,
+    "lon": -79.8409,
+    "is_coastal_north": true,
+    "zone": "Costa Norte"
+  },
+  {
+    "id": "PE-LIM",
+    "name": "Lima",
+    "capital": "Lima",
+    "lat": -12.0464,
+    "lon": -77.0428,
+    "is_coastal_north": false,
+    "zone": "Costa"
+  },
+  {
+    "id": "PE-LOR",
+    "name": "Loreto",
+    "capital": "Iquitos",
+    "lat": -3.7491,
+    "lon": -73.2538,
+    "is_coastal_north": false,
+    "zone": "Selva"
+  },
+  {
+    "id": "PE-MDD",
+    "name": "Madre de Dios",
+    "capital": "Puerto Maldonado",
+    "lat": -12.5933,
+    "lon": -69.1891,
+    "is_coastal_north": false,
+    "zone": "Selva"
+  },
+  {
+    "id": "PE-MOQ",
+    "name": "Moquegua",
+    "capital": "Moquegua",
+    "lat": -17.1983,
+    "lon": -70.9356,
+    "is_coastal_north": false,
+    "zone": "Costa/Sierra"
+  },
+  {
+    "id": "PE-PAS",
+    "name": "Pasco",
+    "capital": "Cerro de Pasco",
+    "lat": -10.6675,
+    "lon": -76.2567,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-PIU",
+    "name": "Piura",
+    "capital": "Piura",
+    "lat": -5.1945,
+    "lon": -80.6328,
+    "is_coastal_north": true,
+    "zone": "Costa Norte"
+  },
+  {
+    "id": "PE-PUN",
+    "name": "Puno",
+    "capital": "Puno",
+    "lat": -15.8422,
+    "lon": -70.0199,
+    "is_coastal_north": false,
+    "zone": "Sierra"
+  },
+  {
+    "id": "PE-SAM",
+    "name": "San Martín",
+    "capital": "Moyobamba",
+    "lat": -6.0342,
+    "lon": -76.9717,
+    "is_coastal_north": false,
+    "zone": "Selva"
+  },
+  {
+    "id": "PE-TAC",
+    "name": "Tacna",
+    "capital": "Tacna",
+    "lat": -18.0145,
+    "lon": -70.2536,
+    "is_coastal_north": false,
+    "zone": "Costa/Sierra"
+  },
+  {
+    "id": "PE-TUM",
+    "name": "Tumbes",
+    "capital": "Tumbes",
+    "lat": -3.5669,
+    "lon": -80.4515,
+    "is_coastal_north": true,
+    "zone": "Costa Norte"
+  },
+  {
+    "id": "PE-UCA",
+    "name": "Ucayali",
+    "capital": "Pucallpa",
+    "lat": -8.3791,
+    "lon": -74.5539,
+    "is_coastal_north": false,
+    "zone": "Selva"
+  }
+]
